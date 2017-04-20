@@ -1,0 +1,56 @@
+body {
+  padding: 50px;
+}
+
+.row > div {
+  padding-top:50px;
+  padding-bottom: 50px;
+  background-color: lightgreen;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 24px;
+}
+
+.row > div:nth-child(n+2) {
+  background-color: lightblue;
+}
+
+.row > div:nth-child(n+3) {
+  background-color: pink;
+}
+
+.row > div:nth-child(n+4) {
+  background-color: orange;
+}
+
+.row:nth-child(even) > div {
+  background-color: darkgreen;
+}
+
+.row:nth-child(even) > div:nth-child(n+2) {
+  background-color: darkblue;
+}
+
+.row:nth-child(even) > div:nth-child(n+3) {
+  background-color: red;
+}
+
+.row:nth-child(even) > div:nth-child(n+4) {
+  background-color: yellow;
+}
+
+.row .row > div {
+  background-color: darkgray;
+}
+
+.row .row > div:nth-child(n+2) {
+  background-color: gray;
+}
+
+.row .row > div:nth-child(n+3) {
+  background-color: lightgray;
+}
+
+.row .row > div:nth-child(n+4) {
+  background-color: black;
+}
